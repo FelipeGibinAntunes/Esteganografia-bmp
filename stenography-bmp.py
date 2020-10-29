@@ -101,7 +101,7 @@ def Decriptador(img, sep):
             cabecalho = cabecalho + BinParaChar(atual)
             atual = ""
     # salva os bits indicados pelo cabeçalho      
-    for i in range(0, int(cabecalho)):
+    for _ in range(0, int(cabecalho)):
         l = len(bin(img.load()[pxatual, pyatual][index])[2::])
         out = out + bin(img.load()[pxatual, pyatual][index])[1+l::]
         # gerencia indices
